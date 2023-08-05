@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
-import logo from '../../src/assets/images/logo.svg'
+import logo from '../../src/assets/images/logo.png'
 import social1 from '../../src/assets/images/nav-icon1.svg'
 import social2 from '../../src/assets/images/github-mark-white.svg'
 import social3 from '../../src/assets/images/Gmail_icon_(2020).svg'
@@ -34,7 +34,7 @@ export const NavBar = () => {
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
           <Navbar.Brand href="/">
-            <img src={logo} alt="Logo" />
+            <img src={logo} alt="Logo" className='logo'/>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className='navbar-toggler-icon'></span>
@@ -52,7 +52,7 @@ export const NavBar = () => {
               <a href='https://github.com/jeades92' target='_blank'><img src={social2} alt="Github" /></a>
               <a href='mailto:eadesj25@gmail.com'><img src={social3} alt="IG" /></a>
             </div>
-                <button className='vvd'><span>Connect To Host</span></button>
+                {/* <button className='vvd'><span>Connect To Host</span></button> */}
           </span>
 
           
