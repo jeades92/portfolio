@@ -5,7 +5,7 @@ import { Container, Row, Col } from "react-bootstrap"
 export const AboutMe = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = [ "Web Developer", "Web Designer", "UI/UX Desingner" ];
+    const toRotate = [ "Web Developer", "Web Designer", "UI/UX Designer" ];
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(300 - Math.random() * 180);
 
@@ -25,7 +25,7 @@ export const AboutMe = () => {
         setText(updatedText);
 
         if (isDeleting) {
-            setDelta(prevDelta => prevDelta /2)
+            setDelta(prevDelta => prevDelta /1.3)
         }
 
         if (!isDeleting && updatedText === fullText) {
@@ -43,8 +43,8 @@ export const AboutMe = () => {
             <Container>
                 <Row className="align-items-center">
                         <span className="tagline">Welcome to my Portfolio</span>
-                        <h1>{` Hi I'm James `}<span className="wrap">{text}</span></h1>
-                        <p>I'm a passionate junior developer on the lookout for exciting projects in the realm of entrepreneurship. I thrive on collaboration and possess an insatiable thirst for learning, always seeking opportunities to expand my skill set. With an eagerness to take on new challenges, I'm ready to contribute my expertise and grow alongside innovative teams.</p>
+                        <h1>{` Hi I'm James, `}<span className="wrap">{text}</span></h1>
+                        <p>I am a passionate junior developer with Full Stack Certification on the lookout for exciting projects in the realm of entrepreneurship. I thrive on collaboration and possess an insatiable thirst for learning, always seeking opportunities to expand my skill set. With an eagerness to take on new challenges, I am ready to contribute my expertise and grow alongside innovative teams.</p>
                  
 
                 </Row>
